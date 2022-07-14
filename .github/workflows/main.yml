@@ -25,4 +25,4 @@ jobs:
     # iOSコード生成
     - uses: docker://openapitools/openapi-generator-cli
       with:
-        args: generate -i ./oas.yaml -g swift5 -o ./client/
+        args: generate -i ./test.yaml -g swift5 -o ./client/
