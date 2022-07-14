@@ -23,6 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # iOSコード生成
-    - uses: docker://openapitools/openapi-generator-cli
-      with:
-        args: generate -i test.yaml -g swift5 -o ./client/
+    - name: Generate Client Library w/ the OpenAPITools Generator
+      uses: openapi-generators/openapitools-generator-action@v1.3.0
+
+
