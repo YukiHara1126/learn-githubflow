@@ -16,7 +16,7 @@ jobs:
           path: githubActions
           token: ${{ secrets.PERSONAL_TOKEN }}
       - name: copy target.yml
-        run: cp githubActions/typescript-fetch-client/ typescript-fetch-client/
+        run: cp -rp githubActions/typescript-fetch-client/ typescript-fetch-client/
       - name: clean githubActions
         run: rm -rf githubActions
       - name: create PR
